@@ -1,0 +1,18 @@
+@import "../../GlobalStyles/styles_mixins.scss";
+
+.firstSectionMain {
+  // border: solid red;
+  min-height: 85vh;
+  @include center;
+  justify-content: flex-start;
+  background-image: url("../../../assets/background.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  color: #fff;
+  padding: 200px;
+
+  h1 {
+    width: 380px;
+    font-size: 32px;
+  }
+}

@@ -1,0 +1,67 @@
+@import "../GlobalStyles/styles_mixins.scss";
+
+header {
+  @include center;
+  height: 137px;
+  justify-content: space-between;
+  padding: 0px 30px 0px 30px;
+  color: #fff;
+  background: linear-gradient(
+    90deg,
+    rgba(0, 27, 47, 1) 0%,
+    rgba(0, 86, 149, 1) 88%
+  );
+
+  .firstSectionheader {
+    @include center;
+    gap: 20px;
+  }
+
+  .secondSectionheader {
+    @include center;
+    gap: 50px;
+    font-size: 22px;
+    list-style: none;
+
+    a {
+      color: #fff;
+      list-style: none;
+      text-decoration: none;
+    }
+    a:hover {
+      color: #ccd2d8;
+    }
+  }
+
+  .boxInput {
+    @include center;
+    gap: 20px;
+    padding: 20px;
+    border: solid 1px #fff;
+    border-radius: 30px;
+    height: 60px;
+    width: 300px;
+
+    input {
+      border: none;
+      outline: none;
+      width: 220px;
+      color: #fff;
+      font-size: 16px;
+      background-color: transparent;
+      &::placeholder {
+        color: #ccd2d8;
+        font-size: 16px;
+      }
+    }
+    button {
+      border: none;
+      width: 90px;
+      height: 40px;
+      background-color: transparent;
+      :hover {
+       cursor: pointer;
+      }
+    }
+  }
+}
