@@ -16,3 +16,41 @@
     font-size: 32px;
   }
 }
+
+.secondSectionMain {
+  min-height: 85vh;
+  @include center;
+  align-items: start;
+  flex-direction: column;
+  justify-content: space-around;
+  background-color: #fff;
+  
+  h2{
+  padding-left: 100px;
+  color: #005695;
+  font-size: 40px;
+  }
+
+  .boxCard {
+    // border: solid violet;
+    width: 95%;
+    padding-left: 100px; 
+    @include center;
+    justify-content: space-between;
+
+    .card {
+      @include center;
+      flex-direction: column;
+      gap: 40px;
+      width: 286px;
+      height: 321px;
+      border-radius: 10px;
+      background-color: #0157944d;
+    }
+
+    p {
+      font-size: 18px;
+      width: 200px;
+    }
+  }
+}

@@ -4,6 +4,7 @@ import logo from "../../assets/logo.png";
 import search from "../../assets/search.png";
 import { BrowserRouter, Route, Routes, Link } from "react-router-dom";
 import S from "../Header/header.module.scss";
+import Footer from "../Footer";
 
 export default function Header() {
   return (
@@ -34,6 +35,7 @@ export default function Header() {
         <Route path="/" element={<Inicio />} />
         <Route path="/queroDoar" element={<QueroDoar />} />
       </Routes>
+      <Footer/>
     </BrowserRouter>
   );
 }
