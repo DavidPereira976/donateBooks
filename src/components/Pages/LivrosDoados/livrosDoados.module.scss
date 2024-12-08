@@ -1,0 +1,22 @@
+@import "../../GlobalStyles/styles_mixins.scss";
+
+.sectionDonate{
+    min-height: 95vh;
+    @include center;
+    justify-content: flex-start;
+    justify-content: space-between;
+    align-items: flex-start;
+    padding: 100px;
+    gap: 50px;
+    flex-wrap: wrap;
+
+    .card{
+
+        width: 245px;
+        min-height: 264px;
+        border: solid  #005695;
+        border-radius: 10px;
+        @include center;
+        flex-direction: column;
+    }
+}
